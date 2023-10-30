@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaBarsStaggered } from "react-icons/fa6";
 import logo from "../../assets/logo.png";
 import "./nav.css";
@@ -58,12 +58,12 @@ const Nav = () => {
           </div>
 
           <div className="order-3 hidden lg:block">
-            <button className="btn font-playpen">Login</button>
+            <Link className="btn font-playpen">Login</Link>
           </div>
 
           <div className="flex lg:hidden items-center order-2 lg:order-3 justify-between w-full">
             <div className="order-3">
-              <button className="btn font-playpen">Login</button>
+              <Link className="btn font-playpen">Login</Link>
             </div>
             <img
               className="w-[18W0px] h-[50px] order-2 lg:order-1 lg:hidden"
