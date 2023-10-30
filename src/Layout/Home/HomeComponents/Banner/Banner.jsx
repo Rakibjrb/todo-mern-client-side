@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import bannerImage from "../../../../assets/banner-image.svg";
+import bannerImage from "../../../../assets/banner-image1.svg";
 import "./banner.css";
 
 const Banner = () => {
@@ -7,8 +7,8 @@ const Banner = () => {
     <div className="banner-main lg:h-[calc(100vh-90px)] lg:flex lg:items-center py-14 lg:py-0">
       <div className="max-w-7xl mx-auto font-playpen px-3 md:px-4 xl:px-0">
         <div className="flex items-center flex-col lg:flex-row-reverse gap-10">
-          <div className="flex-1 md:w-3/4 lg:w-full">
-            <img src={bannerImage} alt="banner image" />
+          <div className="flex-1 md:w-3/4 lg:w-full flex justify-center">
+            <img className="h-[480px]" src={bannerImage} alt="banner image" />
           </div>
           <div className="flex-1 text-white ">
             <h1 className="text-5xl font-semibold md:text-center lg:text-left">
