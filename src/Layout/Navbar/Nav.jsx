@@ -1,7 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import { FaBarsStaggered } from "react-icons/fa6";
+import { BsSun } from "react-icons/bs";
+import { MdOutlineDarkMode } from "react-icons/md";
 import logo from "../../assets/logo.png";
 import "./nav.css";
+import { useContext } from "react";
+import { Context } from "../../ContextProvider/ContextProvider";
 
 const navLinks = (
   <>
@@ -21,6 +25,8 @@ const navLinks = (
 );
 
 const Nav = () => {
+  const { theme, handleThemeChange } = useContext(Context);
+
   return (
     <div className="bg-[#732FE6] text-white">
       <div className="max-w-7xl mx-auto py-5 px-3 xl:px-0">
@@ -53,23 +59,40 @@ const Nav = () => {
               <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
                 {/* Sidebar content here */}
                 {navLinks}
+                <li className="lg:hidden">
+                  <button onClick={handleThemeChange}>
+                    Dark Mode : {theme ? "Off" : "On"}
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
 
-          <div className="order-3 hidden lg:block">
+          <div className="order-3 hidden lg:flex items-center gap-5">
+            <button
+              onClick={handleThemeChange}
+              className="btn btn-outline btn-circle text-white"
+            >
+              {theme ? (
+                <BsSun className="text-2xl" />
+              ) : (
+                <MdOutlineDarkMode className="text-2xl" />
+              )}
+            </button>
             <Link className="btn font-playpen">Login</Link>
           </div>
 
           <div className="flex lg:hidden items-center order-2 lg:order-3 justify-between w-full">
-            <div className="order-3">
-              <Link className="btn font-playpen">Login</Link>
+            <div className="flex lg:hidden items-center justify-between w-full">
+              <div className="order-3">
+                <Link className="btn font-playpen">Login</Link>
+              </div>
+              <img
+                className="w-[18W0px] h-[50px] order-2 lg:order-1 lg:hidden"
+                src={logo}
+                alt="logo"
+              />
             </div>
-            <img
-              className="w-[18W0px] h-[50px] order-2 lg:order-1 lg:hidden"
-              src={logo}
-              alt="logo"
-            />
           </div>
         </nav>
       </div>
