@@ -4,11 +4,11 @@ import Footer from "./Layout/Footer/Footer";
 
 const App = () => {
   return (
-    <>
+    <div data-theme="light">
       <Nav />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };
 
