@@ -4,3 +4,29 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.animate-css {
+  animation-name: bannerImgAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+@keyframes bannerImgAnimation {
+  25% {
+    transform: translateX(10px);
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: translateY(-20px);
+    /* transform: rotate(-4deg); */
+  }
+  75% {
+    transform: translateX(-10px);
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: translateY(0px);
+    /* transform: rotate(0deg); */
+  }
+}

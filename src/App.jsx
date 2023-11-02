@@ -8,7 +8,7 @@ const App = () => {
   const { theme } = useContext(Context);
 
   return (
-    <div data-theme={theme ? "dark" : "light"}>
+    <div data-theme={theme ? "dark" : "light"} className="overflow-hidden">
       <Nav />
       <Outlet />
       <Footer />
