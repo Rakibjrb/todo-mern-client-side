@@ -42,7 +42,7 @@ const Nav = () => {
           </ul>
 
           {/*drawer for mobile*/}
-          <div className="drawer lg:hidden order-1 w-20 font-playpen">
+          <div className="drawer lg:hidden order-1 w-20 font-playpen z-50">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
               {/* Page content here */}

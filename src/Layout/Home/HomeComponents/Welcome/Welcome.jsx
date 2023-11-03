@@ -17,7 +17,12 @@ const Welcome = () => {
           data-aos-duration="800"
         >
           <h4 className="text-blue-500 text-center lg:text-left">#welcome</h4>
-          <h2 className="text-4xl font-bold mt-3 mb-6 text-center lg:text-left">
+          <h2
+            className="text-4xl font-bold mt-3 mb-6 text-center lg:text-left"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             Welcome to Our Website
           </h2>
           <p className="text-justify lg:text-left">
