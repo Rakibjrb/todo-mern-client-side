@@ -1,5 +1,6 @@
 import Banner from "./HomeComponents/Banner/Banner";
 import Benefits from "./HomeComponents/Benefits/Benefits";
+import CuponSection from "./HomeComponents/CuponSection/CuponSection";
 import Features from "./HomeComponents/Features/Features";
 import Welcome from "./HomeComponents/Welcome/Welcome";
 
@@ -10,6 +11,7 @@ const Home = () => {
       <Welcome />
       <Features />
       <Benefits />
+      <CuponSection />
     </div>
   );
 };
