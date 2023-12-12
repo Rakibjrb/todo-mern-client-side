@@ -1,11 +1,9 @@
-import footerimage from "../../assets/logo.png";
-
 const Footer = () => {
   return (
     <div className="mt-32 bg-[#444]">
       <footer className="max-w-7xl mx-auto footer py-20 px-10 xl:px-0 text-white">
         <aside>
-          <img width="180" src={footerimage} alt="" />
+          <h3 className="text-3xl font-bold mb-5">List Legend</h3>
           <p>
             ACME Industries Ltd.
             <br />
